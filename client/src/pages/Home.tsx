@@ -141,6 +141,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Quote Widget Section */}
+      <section className="py-12 bg-slate-50">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-heading font-bold text-slate-900">Get an Instant Quote</h2>
+            <p className="text-slate-600 mt-2">Compare rates and find the best coverage in minutes.</p>
+          </div>
+          <QuoteWidget />
+        </div>
+      </section>
+
       {/* Contact Cards Section */}
       <section className="py-20 bg-white" id="services">
         <div className="container mx-auto px-4 md:px-6">
