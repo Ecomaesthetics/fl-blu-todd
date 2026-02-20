@@ -15,7 +15,7 @@ import {
   ExternalLink
 } from "lucide-react";
 import { motion } from "framer-motion";
-import headshot from "@assets/screenshot-1771520810958.png";
+import headshot from "@assets/71e04f91-9873-44b7-b99b-76f26ab6a96d-300x300_(1)_1771607027862.webp";
 import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 
