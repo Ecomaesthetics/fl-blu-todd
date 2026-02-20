@@ -1,31 +1,10 @@
-import { pgTable, text, serial, timestamp, boolean } from "drizzle-orm/pg-core";
-import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
-// === TABLE DEFINITIONS ===
-export const inquiries = pgTable("inquiries", {
-  id: serial("id").primaryKey(),
-  name: text("name").notNull(),
-  email: text("email").notNull(),
-  phone: text("phone"),
-  message: text("message").notNull(),
-  createdAt: timestamp("created_at").defaultNow(),
-  isRead: boolean("is_read").default(false),
+export const contactFormSchema = z.object({
+  name: z.string().min(1, "Name is required"),
+  email: z.string().email("Please enter a valid email"),
+  phone: z.string().optional(),
+  message: z.string().min(1, "Message is required"),
 });
 
-// === BASE SCHEMAS ===
-export const insertInquirySchema = createInsertSchema(inquiries).omit({
-  id: true,
-  createdAt: true,
-  isRead: true,
-});
-
-// === EXPLICIT API CONTRACT TYPES ===
-export type Inquiry = typeof inquiries.$inferSelect;
-export type InsertInquiry = z.infer<typeof insertInquirySchema>;
-
-// Request types
-export type CreateInquiryRequest = InsertInquiry;
-
-// Response types
-export type InquiryResponse = Inquiry;
+export type ContactFormData = z.infer<typeof contactFormSchema>;
