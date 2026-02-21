@@ -174,8 +174,8 @@ export default function Home() {
               { 
                 icon: Mail, 
                 label: "Email Address", 
-                value: "Todd.Greenbaum@appleinsurance.com", 
-                href: "mailto:Todd.Greenbaum@appleinsurance.com",
+                value: "Todd.Greenbaum@Trucordia.com", 
+                href: "mailto:Todd.Greenbaum@Trucordia.com",
                 color: "bg-emerald-50 text-emerald-600"
               },
             ].map((card, idx) => (
@@ -313,7 +313,7 @@ export default function Home() {
                   <FaFacebook className="w-5 h-5" />
                 </a>
                 <a 
-                  href="mailto:Todd.Greenbaum@appleinsurance.com" 
+                  href="mailto:Todd.Greenbaum@Trucordia.com" 
                   className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-secondary transition-colors text-white"
                 >
                   <Mail className="w-5 h-5" />
@@ -344,7 +344,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-secondary" />
-                  <a href="mailto:Todd.Greenbaum@appleinsurance.com" className="hover:text-white transition-colors break-words text-sm">Todd.Greenbaum@appleinsurance.com</a>
+                  <a href="mailto:Todd.Greenbaum@Trucordia.com" className="hover:text-white transition-colors break-words text-sm">Todd.Greenbaum@Trucordia.com</a>
                 </li>
               </ul>
             </div>

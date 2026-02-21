@@ -42,7 +42,7 @@ export function ContactForm() {
     const body = encodeURIComponent(
       `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone || "Not provided"}\n\nMessage:\n${data.message}`
     );
-    window.location.href = `mailto:Todd.Greenbaum@appleinsurance.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:Todd.Greenbaum@Trucordia.com?subject=${subject}&body=${body}`;
     setSubmitted(true);
     form.reset();
     setTimeout(() => setSubmitted(false), 5000);
@@ -54,7 +54,7 @@ export function ContactForm() {
         <CheckCircle className="w-16 h-16 text-green-500 mb-4" />
         <h3 className="text-2xl font-heading font-bold text-slate-900 mb-2">Opening Your Email</h3>
         <p className="text-slate-600">Your email app should open with the message pre-filled. Just hit send!</p>
-        <p className="text-slate-500 text-sm mt-4">If your email didn't open, you can reach me directly at<br /><a href="mailto:Todd.Greenbaum@appleinsurance.com" className="text-secondary font-medium hover:underline">Todd.Greenbaum@appleinsurance.com</a></p>
+        <p className="text-slate-500 text-sm mt-4">If your email didn't open, you can reach me directly at<br /><a href="mailto:Todd.Greenbaum@Trucordia.com" className="text-secondary font-medium hover:underline">Todd.Greenbaum@Trucordia.com</a></p>
       </div>
     );
   }
