@@ -141,6 +141,23 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Section */}
+      <section id="about" className="py-20 bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-6">
+              About Me
+            </h2>
+            <p className="text-lg text-slate-600 leading-relaxed mb-6">
+              I'm Todd Greenbaum, a Licensed Sales Agent dedicated to helping individuals and families across the state of Florida find the right insurance coverage. With a client-first approach, I take the time to understand your unique needs and guide you through your options so you can make confident, informed decisions.
+            </p>
+            <p className="text-lg text-slate-600 leading-relaxed">
+              Whether you're exploring Medicare plans, life insurance, or health coverage, I'm here to simplify the process and ensure you get the protection you deserve — with honesty, transparency, and personalized attention every step of the way.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Quote Widget Section */}
       <section className="py-12 bg-slate-50">
         <div className="container mx-auto px-4 md:px-6">
