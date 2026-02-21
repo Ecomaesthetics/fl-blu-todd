@@ -273,7 +273,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-slate-900 mb-1">Service Area</h4>
-                    <p className="text-slate-600">Proudly serving clients in Florida and surrounding areas.</p>
+                    <p className="text-slate-600">Proudly serving clients throughout the state of Florida.</p>
                   </div>
                 </div>
 
