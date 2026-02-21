@@ -19,7 +19,7 @@ const contactFormSchema = z.object({
   name: z.string().min(1, "Name is required"),
   email: z.string().email("Please enter a valid email"),
   phone: z.string().optional(),
-  message: z.string().min(1, "Message is required"),
+  message: z.string().optional(),
 });
 
 type ContactFormData = z.infer<typeof contactFormSchema>;
@@ -40,7 +40,7 @@ export function ContactForm() {
   function onSubmit(data: ContactFormData) {
     const subject = encodeURIComponent(`New Inquiry from ${data.name}`);
     const body = encodeURIComponent(
-      `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone || "Not provided"}\n\nMessage:\n${data.message}`
+      `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone || "Not provided"}\n\nMessage:\n${data.message || "No message provided"}`
     );
     window.location.href = `mailto:Todd.Greenbaum@Trucordia.com?subject=${subject}&body=${body}`;
     setSubmitted(true);
